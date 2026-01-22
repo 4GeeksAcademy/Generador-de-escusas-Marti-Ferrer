@@ -15,19 +15,34 @@
     />
   </head>
   <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    
+<h1>Generador de Excusas</h1>
+  <button onclick="mostrarExcusa()">Generar excusa</button>
+  <p id="excusa"></p>
+
+  <script>
+    function mostrarExcusa() {
+      const sujetos = ["Mi perro", "El internet", "Mi computadora", "El sistema", "El profesor"];
+      const acciones = ["rompió", "eliminó", "bloqueó", "dañó", "reinició"];
+      const objetos = ["mi tarea", "el archivo", "el proyecto final", "el correo", "la plataforma"];
+      const cuando = ["mientras dormia", "cuando estaba en clase", "cuando hacia ejercicio", "jugando", "mientras me duchaba"];
+    
+
+
+
+
+
+      const excusa =
+        sujetos[Math.floor(Math.random() * sujetos.length)] + " " +
+        acciones[Math.floor(Math.random() * acciones.length)] + " " +
+        objetos[Math.floor(Math.random() * objetos.length)] + ".";
+        cuando[Math.floor(Math.random() * cuando.length)] + ".";
+
+      document.getElementById("excusa").textContent = excusa;
+    }
+  </script>
+
+
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
