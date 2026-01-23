@@ -1,7 +1,43 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: rgb(146, 146, 146);
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+ 
+#excuse{
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+p {
+    margin: 0;
+}
+
+.excuse-card{
+    
+    background: white;
+    width: 34rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 5rem 0.2rem black;
+}
+
+
+
+
+
+
+
+
+
+
+
+

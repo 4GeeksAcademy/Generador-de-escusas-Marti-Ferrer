@@ -16,35 +16,18 @@
   </head>
   <body>
     
-<h1>Generador de Excusas</h1>
-  <button onclick="mostrarExcusa()">Generar excusa</button>
-  <p id="excusa"></p>
+      <div class="excuse-card">
+        <p id="excuse">generador de excusas</p>
+      </div>
 
-  <script>
-    function mostrarExcusa() {
-      const sujetos = ["Mi perro", "El internet", "Mi computadora", "El sistema", "El profesor"];
-      const acciones = ["rompió", "eliminó", "bloqueó", "dañó", "reinició"];
-      const objetos = ["mi tarea", "el archivo", "el proyecto final", "el correo", "la plataforma"];
-      const cuando = ["mientras dormia", "cuando estaba en clase", "cuando hacia ejercicio", "jugando", "mientras me duchaba"];
+
     
-
-
-
-
-
-      const excusa =
-        sujetos[Math.floor(Math.random() * sujetos.length)] + " " +
-        acciones[Math.floor(Math.random() * acciones.length)] + " " +
-        objetos[Math.floor(Math.random() * objetos.length)] + ".";
-        cuando[Math.floor(Math.random() * cuando.length)] + ".";
-
-      document.getElementById("excusa").textContent = excusa;
-    }
-  </script>
-
-
+    
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
   </body>
 </html>
+
+
+
