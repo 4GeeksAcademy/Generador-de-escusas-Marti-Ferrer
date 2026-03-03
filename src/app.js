@@ -5,6 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+
 window.onload = function() {
   let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
   let action = ['ate', 'peed', 'crushed', 'broke'];
@@ -16,11 +17,16 @@ const randomElement = (Array)=>{
   const randomPosition = Math.trunc(Math.random() * Array.length)
   return Array[randomPosition]
 } 
-const excuse = randomElement(who) + " " + randomElement(action) + " " + randomElement(what) + " " + randomElement(when) + " " + "."
+const excuse = [who, action, what, when];
+let excuseFinal = "";
+
+for( let array of excuse){
+ excuseFinal+= randomElement(array)+ " "
+}
 
 const excuseHTMLElement = document.getElementById("excuse")
 
-excuseHTMLElement.innerHTML = excuse
+excuseHTMLElement.innerHTML = excuseFinal
 
 };
 
